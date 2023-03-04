@@ -6,6 +6,7 @@ Version 1.0
 - Lambda With Sqs https://github.com/dibiancoj/IAC/tree/main/ModuleTester/LambdaWithSqs
 - Lambda With Alb (Non-serverless api project) https://github.com/dibiancoj/IAC/tree/main/ModuleTester/LambdaWithAlb 
 - Lambda With Alb In Web Api Project (real api project) https://github.com/dibiancoj/IAC/tree/main/ModuleTester/LambdaWithServerlessWebApi
+- Lambda With Custom Runtime https://github.com/dibiancoj/IAC/tree/main/ModuleTester/LambdaWithAlb_InNet7_Bring_OwnFramework
 
 Serverless Api Project Template Type:
 
