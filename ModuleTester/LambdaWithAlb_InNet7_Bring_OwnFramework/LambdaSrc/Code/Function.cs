@@ -32,7 +32,7 @@ public class Function
             {
                 { "Content-Type", "application/json" }
             },
-            Body = System.Text.Json.JsonSerializer.Serialize(new { Message = "Lambda With Alb Called" })
+            Body = System.Text.Json.JsonSerializer.Serialize(new { Message = "Lambda With Alb Called." })
         };
     }
 }
