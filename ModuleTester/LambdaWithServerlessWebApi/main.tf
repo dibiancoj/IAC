@@ -24,7 +24,7 @@ module "serverless_api_lambda" {
   subnet_ids                    = []
   lambda_zip_file_name          = "./artifacts/myfunction.zip"
   function_name                 = "my-serverless-api"
-  handler_namespace_path        = "MyServerlessProject"
+  handler_namespace_path        = "MyServerlessProject" //<-- for serverless this is just the assembly name. Since this is an api and it needs to bootup the entire app
   runtime                       = "dotnet6"
   lambda_vpc_security_group_ids = [] //["${module.alb.aws_alb_security_group_id}"]
   iam_role_arn_for_lambda       = module.lambda_roles.aws_iam_role_arn
