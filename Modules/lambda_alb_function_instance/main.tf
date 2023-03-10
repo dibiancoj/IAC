@@ -33,9 +33,10 @@ resource "aws_lb_listener_rule" "lambda_by_request_headers" {
 }
 
 resource "aws_alb_target_group" "app" {
-  name        = "${var.lambda_function_name}-tg"
-  port        = var.app_port
-  protocol    = "HTTP"
-  vpc_id      = var.vpc_id
-  target_type = "lambda"
+  name                               = "${var.lambda_function_name}-tg"
+  port                               = var.app_port
+  protocol                           = "HTTP"
+  vpc_id                             = var.vpc_id
+  target_type                        = "lambda"
+  lambda_multi_value_headers_enabled = true
 }
