@@ -38,5 +38,5 @@ resource "aws_alb_target_group" "app" {
   protocol                           = "HTTP"
   vpc_id                             = var.vpc_id
   target_type                        = "lambda"
-  lambda_multi_value_headers_enabled = true
+  lambda_multi_value_headers_enabled = true //allows for json return types in an alb. Otherwise octet stream is always the return
 }
